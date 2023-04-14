@@ -19,7 +19,7 @@ RUN ln -snf /usr/share/zoneinfo/America/New_York /etc/localtime && echo America/
 ## Required software packages
 RUN apt-get -y update
 RUN apt-get -y install software-properties-common python3-pip wget curl git python3 python3-dev python-is-python3 \
-                       libcairo2-dev pkg-config awscli busybox sudo openssl vim nano
+                       libcairo2-dev pkg-config awscli busybox sudo openssl vim nano enchant-2 libenchant-2-2 libenchant-2-dev
 
 ## Required Sphinx packages
 RUN pip install sphinx sphinx-autobuild rstcheck[sphinx] f5_sphinx_theme recommonmark sphinx_copybutton \
@@ -27,7 +27,7 @@ RUN pip install sphinx sphinx-autobuild rstcheck[sphinx] f5_sphinx_theme recommo
                 tornado commonmark sphinxcontrib-nwdiag sphinxcontrib-blockdiag myst-parser sphinx-lint \
                 sphinxcontrib-addmetahtml sphinxprettysearchresults sphinx-markdown-tables gitpython yattag \
                 cfgv identify nodeenv pre-commit awscli sphinxcontrib-serializinghtml snooty-lextudio esbonio \
-                sphinx-terraform sphinx-simplepdf 
+                sphinx-terraform sphinx-simplepdf sphinxcontrib-spelling
 
 ## Code-server and required extensions
 RUN curl -fsSL https://code-server.dev/install.sh | sh
