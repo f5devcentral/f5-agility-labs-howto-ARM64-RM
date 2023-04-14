@@ -89,7 +89,8 @@ extensions = [
     "sphinxcontrib.nwdiag",
     "sphinxcontrib.blockdiag",
     "sphinx.ext.autosectionlabel",
-    "myst_parser"
+    "myst_parser",
+    "sphinxcontrib.seqdiag"
 ]
 
 graphviz_output_format = "svg"

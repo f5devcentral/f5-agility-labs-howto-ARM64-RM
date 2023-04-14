@@ -33,3 +33,4 @@ sphinx-terraform
 sphinx-simplepdf 
 sphinxcontrib-serializinghtml
 sphinxcontrib-spelling
+funcparserlib

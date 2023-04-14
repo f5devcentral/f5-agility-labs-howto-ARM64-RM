@@ -27,7 +27,7 @@ RUN pip install sphinx sphinx-autobuild rstcheck[sphinx] f5_sphinx_theme recommo
                 tornado commonmark sphinxcontrib-nwdiag sphinxcontrib-blockdiag myst-parser sphinx-lint \
                 sphinxcontrib-addmetahtml sphinxprettysearchresults sphinx-markdown-tables gitpython yattag \
                 cfgv identify nodeenv pre-commit awscli sphinxcontrib-serializinghtml snooty-lextudio esbonio \
-                sphinx-terraform sphinx-simplepdf sphinxcontrib-spelling
+                sphinx-terraform sphinx-simplepdf sphinxcontrib-spelling funcparserlib
 
 ## Code-server and required extensions
 RUN curl -fsSL https://code-server.dev/install.sh | sh
